@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "f4fb788e-d36e-4561-bcba-fb2bfddc66ae",
+		"name": "InterviewApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38734268"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1cGFtMTFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJvb21paGt5cSIsInVzZXJuYW1lIjoicnVwYW0xMjM0NSIsImlkIjoiNjdiMTY2N2U3N2ViYzBjNjdkM2FiNThmIiwiaWF0IjoxNzM5Nzc2MDQxLCJleHAiOjE3Mzk4NjI0NDF9.jZcB1lPC0x2CoInGTyY5q2C_biJdRJiLYzmvMmQWI64",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abcd@gmail.com\",\r\n    \"username\":\"abcd\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/Signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"Signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/question",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"rutpam1323488555\",\r\n    \"password\":\"oomih3kyq\",\r\n    \"email\":\"rupam88t11355@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/Signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"Signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Interview Questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1cGFtMTFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJvb21paGt5cSIsInVzZXJuYW1lIjoicnVwYW0xMjM0NSIsImlkIjoiNjdiMTY2N2U3N2ViYzBjNjdkM2FiNThmIiwiaWF0IjoxNzM5ODkyMjg4LCJleHAiOjE3Mzk5Nzg2ODh9.WUVlvRLxHUqNDvDiB4-CJBmXYfB8W3XavP4KI583bOU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\":\"Data science\",\r\n    \"experience\":\"Advance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/interview/getQuestions",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"interview",
+						"getQuestions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Interview of user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1cGFtODgxMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6Im9vbWloa3lxIiwidXNlcm5hbWUiOiJydXBhbTEyMzQ4ODUiLCJpZCI6IjY3YjVmNDExYWIzYTE1YzJmZjRlZjQyMiIsImlhdCI6MTczOTk3Nzc1NiwiZXhwIjoxNzQwMDY0MTU2fQ.UoY2Z7gz5QxY0EHqk5kFJfwIhqXfT-ObwriM34tLMXQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":userid\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/Interview/user/userInterview",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Interview",
+						"user",
+						"userInterview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get sample question",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Analysis questions answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1cGFtODh0MTEzNTVAZ21haWwuY29tIiwicGFzc3dvcmQiOiJvb21paDNreXEiLCJ1c2VybmFtZSI6InJ1dHBhbTEzMjM0ODg1NTUiLCJpZCI6IjY3YmU4ZjU5MDFlZGE0NTY4MGU5MTBhMiIsImlhdCI6MTc0MDgwNTY3MCwiZXhwIjoxNzQwODkyMDcwfQ.9gkdClNpgBoB2Iu2eyVEPBVeL4U-Ivd04aH8bQHIh9s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"analysisObject\": {\r\n        \"questions\": [\r\n            {\r\n                \"question\": \"What is CSS?\",\r\n                \"answer\": \"CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and layout of HTML documents.\"\r\n            },\r\n            {\r\n                \"question\": \"What are the different types of CSS?\",\r\n                \"answer\": \"There are three types of CSS: Inline CSS (applied directly in HTML elements), Internal CSS (within a <style> tag in the HTML file), and External CSS (linked as a separate .css file).\"\r\n            },\r\n            {\r\n                \"question\": \"What is the difference between relative, absolute, and fixed positioning in CSS?\",\r\n                \"answer\": \"Relative positioning moves an element from its normal position, absolute positions it relative to its nearest positioned ancestor, and fixed keeps it in place relative to the viewport.\"\r\n            },\r\n            {\r\n                \"question\": \"What is Flexbox in CSS?\",\r\n                \"answer\": \"Flexbox is a layout model in CSS that allows for flexible and responsive design by controlling the alignment, direction, and size of items within a container.\"\r\n            },\r\n            {\r\n                \"question\": \"What is the difference between 'em' and 'rem' in CSS?\",\r\n                \"answer\": \"'em' is relative to the font-size of the parent element, while 'rem' is relative to the root element's font-size.\"\r\n            }\r\n        ]\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/Interview/user/analysis",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Interview",
+						"user",
+						"analysis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask Our Ai",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJ1cGFtODh0MTEzNTVAZ21haWwuY29tIiwicGFzc3dvcmQiOiJvb21paDNreXEiLCJ1c2VybmFtZSI6InJ1dHBhbTEzMjM0ODg1NTUiLCJpZCI6IjY3YmU4ZjU5MDFlZGE0NTY4MGU5MTBhMiIsImlhdCI6MTc0MTE3OTg3MCwiZXhwIjoxNzQxMjY2MjcwfQ.x4brgfzROqq37kPc6xyU7vx2_o5R3SOpooK71K0f6NI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\":\"How to prepare fior interview\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/Interview/user/askourai",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Interview",
+						"user",
+						"askourai"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
